@@ -15,6 +15,7 @@ sed -i '/^ZSH_THEME/d' "$HOME/.zshrc"
 sed -i '1iZSH_THEME="agnoster"' "$HOME/.zshrc"
 echo "alias chcolor='$HOME/.termux/colors.sh'" >> "$HOME/.zshrc"
 echo "alias chfont='$HOME/.termux/fonts.sh'" >> "$HOME/.zshrc"
+echo "alias chname='$HOME/.termux/username.sh'" >> "$HOME/.zshrc"
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.zsh-syntax-highlighting" --depth 1
 echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HOME/.zshrc"
@@ -27,6 +28,9 @@ $HOME/.termux/colors.sh
 
 echo "Choose your font now~"
 $HOME/.termux/fonts.sh
+
+echo "Enter your display name~"
+$HOME/.termux/username.sh
 
 echo "Please restart Termux app..."
 
