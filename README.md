@@ -5,7 +5,7 @@ PartyTermux implements oh-my-zsh and [zsh-syntax-highlighting](https://github.co
 
 ## Install:
 ```shell
-sh -c "$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)"
+sh -c "$(curl -fsSL https://github.com/JvanKraft/happy-termux.git/raw/master/install.sh)"
 ```
 
 ## Change color scheme:

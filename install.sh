@@ -3,10 +3,10 @@ termux-setup-storage
 
 apt update
 apt install -y git zsh
-# git clone https://github.com/Cabbagec/termux-ohmyzsh.git "$HOME/termux-ohmyzsh" --depth 1
+git clone https://github.com/JvanKraft/happy-termux.git "$HOME/happy-termux" --depth 1
 
 mv "$HOME/.termux" "$HOME/.termux.bak.$(date +%Y.%m.%d-%H:%M:%S)"
-cp -R "$HOME/termux-ohmyzsh/.termux" "$HOME/.termux"
+cp -R "$HOME/happy-termux/.termux" "$HOME/.termux"
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh" --depth 1
 mv "$HOME/.zshrc" "$HOME/.zshrc.bak.$(date +%Y.%m.%d-%H:%M:%S)"
