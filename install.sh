@@ -3,7 +3,7 @@ termux-setup-storage
 
 apt update
 apt install -y git zsh
-git clone https://github.com/JvanKraft/happy-termux.git "$HOME/happy-termux" --depth 1
+# git clone https://github.com/JvanKraft/happy-termux.git "$HOME/happy-termux" --depth 1
 
 mv "$HOME/.termux" "$HOME/.termux.bak.$(date +%Y.%m.%d-%H:%M:%S)"
 cp -R "$HOME/happy-termux/.termux" "$HOME/.termux"
