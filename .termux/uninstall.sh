@@ -9,6 +9,6 @@ while true; do
     esac
 done
 
-echo "Please restart Termux app..."
+echo "Uninstalled Happy-termux. Please restart the app..."
 
 exit

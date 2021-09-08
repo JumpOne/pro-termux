@@ -4,8 +4,15 @@ A fork from [oh-my-termux](https://github.com/4679/oh-my-termux). This makes you
 Happy-Termux implements oh-my-zsh and [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) on your Termux app, as well as some color schemes (most are from [Gogh](https://github.com/Mayccoll/Gogh)), and some Powerline fonts (ported from [powerline/fonts](https://github.com/powerline/fonts)). Default set is agnoster for oh-my-zsh, Tango for color scheme, and Ubuntu font.
 
 ## Install:
+### With Curl :
 ```shell
-sh -c "$(curl -fsSL https://github.com/JvanKraft/happy-termux.git/raw/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/JvanKraft/happy-termux/main/install.sh)"
+```
+### Manual :
+```shell
+git clone https://github.com/JvanKraft/happy-termux
+cd happy-termux
+./install.sh
 ```
 
 ## Change color scheme:
@@ -29,7 +36,7 @@ Run `chname` to change username, or run:
  - curl
 
 ## Revert environment
-Run 
+Run:
 ```shell
 ~/.termux/uninstall.sh
 ```
