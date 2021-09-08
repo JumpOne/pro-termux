@@ -1,16 +1,16 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 while true; do
-	read -p 'Enter your display username' name;
+	echo 'Enter your display username: ';
+	read name;
 
 	if [[ -z "$name" ]]; then
+		echo "Please enter valid username";
 		break;
-	elif (( $name >= 0); then
+	else
 		sed -i '/prompt_context/d' "$HOME/.zshrc";
 		echo "prompt_context(){ prompt_segment black default $name }" >> "$HOME/.zshrc";
 		break;
-	else
-		echo "Please enter valid username";
 	fi
 done;
 
