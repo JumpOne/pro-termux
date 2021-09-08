@@ -16,4 +16,6 @@ done;
 
 termux-reload-settings
 
+echo "Please restart Termux app..."
+
 exit
