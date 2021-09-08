@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 while true; do
-	echo 'Enter your display username: ';
+	echo 'The default username is root. Enter your display username: ';
 	read name;
 
 	if [[ -z "$name" ]]; then

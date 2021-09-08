@@ -19,7 +19,7 @@ echo "alias chname='$HOME/.termux/username.sh'" >> "$HOME/.zshrc"
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.zsh-syntax-highlighting" --depth 1
 echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HOME/.zshrc"
-echo "prompt_context(){}" >> "$HOME/.zshrc"
+echo "prompt_context(){prompt_segment black default "root"}" >> "$HOME/.zshrc"
 
 chsh -s zsh
 
@@ -29,9 +29,7 @@ $HOME/.termux/colors.sh
 echo "Choose your font now~"
 $HOME/.termux/fonts.sh
 
-echo "Enter your display name~"
+echo "Name to display~"
 $HOME/.termux/username.sh
-
-echo "Please restart Termux app..."
 
 exit
