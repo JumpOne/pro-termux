@@ -28,3 +28,5 @@ while true; do
 done
 
 termux-reload-settings
+
+exit

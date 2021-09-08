@@ -10,8 +10,10 @@ while true; do
 		echo "prompt_context(){ prompt_segment black default $name }" >> "$HOME/.zshrc";
 		break;
 	else
-		echo "Please enter the right number.";
+		echo "Please enter valid username";
 	fi
 done;
 
 termux-reload-settings
+
+exit
