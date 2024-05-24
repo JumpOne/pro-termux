@@ -41,4 +41,4 @@ Run:
 ~/.termux/uninstall.sh
 ```
 
-@ jvankraft 2021
+@ J1K Labs 2021
